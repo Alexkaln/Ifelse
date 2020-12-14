@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class mainclass {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ввидите значение число");
+        int n= in.nextInt();
+        int a=n/100000%10;
+        int b=n/10000%10;
+        int c=n/1000%10;
+        int d=n/100%10;
+        int e=n/10%10;
+        int f=n%10;
+
+
+        if (d + e + f == a + b + c) System.out.println("Это число счастливое:D");
+        else System.out.println("Число не счастливое:(");
+    }}
